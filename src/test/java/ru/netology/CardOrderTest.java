@@ -16,7 +16,7 @@ class CardOrderTest {
     @Test
     void ShouldTest() {
         $("[data-test-id=name] input").setValue("Ерохин Илья");
-        $("[data-test-id=phone] input").setValue("+79114000000");
+        $("[data-test-id=phone] input").setValue("+79114060000");
         $("[data-test-id=agreement]").click();
         $(".button").click();
         $(".Success_successBlock__2L3Cw").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
